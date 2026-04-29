@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Bistro | Fine Dining Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <a href="#" class="logo">LUMINA BISTRO</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="btn-reserve">Book a Table</button>
+    </nav>
+
+    <header id="home" class="hero">
+        <h1>Exquisite Dining</h1>
+        <p>Experience the perfect blend of modern culinary art and timeless elegance. Crafted by world-renowned chefs using only the finest seasonal ingredients.</p>
+        <button class="btn-reserve" style="padding: 1.2rem 2.5rem; font-size: 1rem;">View Menu</button>
+    </header>
+
+    <section id="menu" class="menu">
+        <h2 class="section-title">Our Chef's Specials</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="assets/plate-1.png" alt="Gourmet Steak" class="menu-img">
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <h3>Aged Eye Fillet</h3>
+                        <span class="price">$42</span>
+                    </div>
+                    <p class="menu-desc">Prime-aged steak served with truffle-infused mash, heirloom carrots, and a rich cabernet reduction.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="assets/plate-2.png" alt="Burrata Salad" class="menu-img">
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <h3>Vibrant Burrata</h3>
+                        <span class="price">$28</span>
+                    </div>
+                    <p class="menu-desc">Fresh burrata cheese, heirloom tomatoes, basil foam, and balsamic pearls with organic micro-greens.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Lamb Racks" class="menu-img">
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <h3>Herb-Crusted Lamb</h3>
+                        <span class="price">$38</span>
+                    </div>
+                    <p class="menu-desc">Slow-roasted lamb racks with mint pea puree, fondant potatoes, and rosemary jus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>The Culinary Journey</h2>
+            <p>At Lumina Bistro, we believe that dining is an experience that transcends the simple act of eating. Our culinary philosophy is rooted in authenticity, flavor, and visual artistry.</p>
+            <p>Sourcing only the finest, sustainable ingredients from local artisans and global markets, our chefs craft modern interpretations of classic flavors, designed to delight all the senses.</p>
+        </div>
+        <div class="about-img-wrapper">
+            <img src="assets/hero-bg.png" alt="Lumina Bistro Interior" class="about-img">
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Visit Us</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <h4>Location</h4>
+                <p>123 Culinary Avenue<br>Metropolis, NY 10001</p>
+            </div>
+            <div class="contact-item">
+                <h4>Hours</h4>
+                <p>Mon - Thu: 5:00 PM - 10:00 PM<br>Fri - Sun: 4:00 PM - 11:30 PM</p>
+            </div>
+            <div class="contact-item">
+                <h4>Reservations</h4>
+                <p>Phone: (555) 123-4567<br>Email: info@luminabistro.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">LUMINA BISTRO</div>
+        <p class="footer-text">&copy; 2026 Lumina Bistro. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
